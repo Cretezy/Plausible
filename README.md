@@ -1,5 +1,17 @@
 # Plausible Analytics
 
+Hi! [Plausible](https://github.com/plausible/analytics) is a great piece of software for self-hosted analytics. However, the project does not cut releases very often.
+
+This repository/fork is indented to provided public Docker images for the `master` branch of Plausible.
+This builds from the same source (no modifications), and only changes the README/GitHub Actions workflows.
+
+You can [setup Plausible](https://plausible.io/docs/self-hosting) from their documentation, and replace `image: plausible/analytics:v2.0` in `docker-compose.yml` to `image: ghcr.io/cretezy/plausible:latest`.
+
+
+---
+
+# Plausible Analytics
+
 <p align="center">
   <a href="https://plausible.io/">
     <img src="https://raw.githubusercontent.com/plausible/docs/master/static/img/plausible-analytics-icon-top.png" width="140px" alt="Plausible Analytics" />
