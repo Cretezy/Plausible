@@ -7,6 +7,9 @@ This builds from the same source (no modifications), and only changes the README
 
 You can [setup Plausible](https://plausible.io/docs/self-hosting) from their documentation, and replace `image: plausible/analytics:v2.0` in `docker-compose.yml` to `image: ghcr.io/cretezy/plausible:latest`.
 
+## Extra setup
+
+Newer versions of Plausible require `TOTP_VAULT_KEY` to be set (in your `plausible-conf.env`). You can generate one using `openssl rand -base64 32 | tr -d '\n' ; echo`
 
 ---
 
